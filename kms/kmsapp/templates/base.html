@@ -1,0 +1,289 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Index</title>
+    {% load staticfiles %}
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'kmsapp/css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="{% static 'kmsapp/css/mdb.min.css' %}" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="{% static 'kmsapp/css/style.css' %}" rel="stylesheet">
+
+    <style type="text/css">
+
+
+    .navbarmenu{
+        background:#CC0000;
+
+    }
+
+
+    .navbar .navbar-nav .nav-item{
+
+        padding-top: 10px;
+        text-align: center;
+        font-size: 1.5rem;
+
+    }
+
+    #imgBlP{
+
+        width: 100%;
+
+    }
+
+    .contenedor{
+
+        padding-top: 10%;
+    }
+
+
+    .img1{
+
+        background:black;
+    }
+
+    .img2{
+
+        background:white;
+    }
+
+    .img3{
+
+        background:red;
+    }
+
+    .img4{
+
+        background:green;   
+    }
+
+    .texto1{
+
+        color:yellow;
+    }
+
+    .texto2{
+        color:blue;
+    }
+
+    .texto3{
+        color:black;
+    }
+
+    .texto4{
+        color:white;
+    }
+
+    .flechas {
+            background-color: #30A3D1;
+            padding-left: 7%;
+            padding-right: 7%;
+            top:100s%;
+        }
+
+    .cont1{
+
+        background:black;
+        width:90%;
+        height:500px;
+    }
+
+    .cuentac{
+
+        font-size:28px;
+        font-weight:bold;
+        color:white;
+    }
+
+    .datos{
+        width:90%;
+        height:40px;
+        font-weight:bold;
+        font-size:16px;
+    }
+
+    .registrar{
+        
+        border:none;
+        background: rgb(163, 35, 43);
+        font-weight:bold;
+        font-size:24px;
+        color:white;
+        width:70%;
+        height:50px;
+    }
+
+    .cont2{
+
+        width:100%;
+        height:100%;
+        background: rgb(37, 37, 38);
+    }
+
+    .titulo1{
+
+        font-weight:bold;
+        font-size:28px;
+        color:white;
+        
+    }
+
+    .parrafo1{
+
+        font-size:20px;
+        text-align:justify;
+        color:rgb(98, 116, 137);
+    }
+
+    .cont3{
+        width:100%;
+        height:100%;
+        background: rgb(15, 18, 13);
+
+    }
+
+    .servicios{
+
+        font-size:14px;
+        text-align:center;
+        font-weight:normal;
+        color:white;
+
+    }
+
+    .nombres{
+     
+     font-weight:bold;
+        font-size:22px;
+        color:white;
+        text-align:center;
+
+
+    }
+
+     .cont4{
+
+        width:50%;
+        height:80%;
+        background: rgb(37, 37, 38);
+    }
+
+    .icon{
+        width: 50%;
+        height:auto;
+    }
+
+    .icon1{
+        width: 35%;
+        height:auto;
+    }
+
+    </style>
+
+</head>
+<body >
+
+
+    <!--Navbar-->
+<nav class="navbar navbar-fixed-top navbar-dark navbarmenu" >
+
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="container-fluid">
+            <!--Collapse content-->
+            <div class="collapse navbar-toggleable-xs estiloBL" id="collapseEx">
+                <!--Navbar Brand-->
+                <a class="navbar-brand tamn" href="">
+                    <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" id="imgBlP">
+                </a>
+
+
+                <ul class="nav navbar-nav fuente-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" style="padding-right: 20px;">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="padding-right: 20px;">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="padding-right: 20px;">Visitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="padding-right: 20px;">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="padding-right: 20px;">Empresas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/formulario/" class="nav-link" style="padding-right: 20px;">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="padding-right: 20px;">Blog</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+<!--/.Navbar-->
+
+        
+    
+    {% block content %}
+    {% endblock %}
+<footer class="page-footer center-on-small-only" style="background-color: #FFFFFF; margin-bottom: 0px; padding-bottom: 0px;">
+
+    <!--Footer Links-->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!--First column-->
+            <div class="col-md-6" align="left">
+                <img src="http://res.cloudinary.com/dldzl80ld/image/upload/v1517460447/Blp%20Group/Logo.png" class="final-lg" style="width: 35%; width: 40%;  padding-left: 5%;">
+            </div>
+            <!--/.First column-->
+
+            <!--Second column-->
+            <div class="col-md-6" align="right" style="margin-top: 10px;">
+                <img src="https://res.cloudinary.com/dldzl80ld/image/upload/v1517477197/Blp%20Group/Facebook.png" width="8%" style="margin-right: 2%">
+                <img src="http://res.cloudinary.com/dldzl80ld/image/upload/v1517477189/Blp%20Group/Twitter.png" width="8%" style="margin-right: 2%">
+                <img src="https://res.cloudinary.com/dldzl80ld/image/upload/v1517477190/Blp%20Group/Skype.png" width="8%" style="margin-right: 5%"></div>
+                
+
+            </div>
+            <!--/.Second column-->
+        </div>
+    </div>
+    <!--/.Footer Links-->
+
+
+
+</footer>
+                
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="{% static 'kmsapp/js/jquery-2.2.3.min.js' %}"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="{% static 'kmsapp/js/tether.min.js' %}"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="{% static 'kmsapp/js/bootstrap.min.js' %}"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="{% static 'kmsapp/js/mdb.min.js' %}"></script>
+
+    
+
+</body >
+
+    
+
+</html>
